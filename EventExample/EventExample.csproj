@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDFBDFA5-5906-4203-8F99-359A0A8CF299}</ProjectGuid>
+    <ProjectGuid>{8BEE93CF-0D9F-447E-A2E0-66CEBE8314D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Office</RootNamespace>
-    <AssemblyName>Office</AssemblyName>
+    <RootNamespace>EventExample</RootNamespace>
+    <AssemblyName>EventExample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Office.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Errors\PersonError.cs" />
+    <Compile Include="Interfaces\IOffice.cs" />
+    <Compile Include="Interfaces\IScheduler.cs" />
+    <Compile Include="Interfaces\ISchedulerListener.cs" />
+    <Compile Include="Model\ActionEventArg.cs" />
+    <Compile Include="Model\Monitor.cs" />
+    <Compile Include="Model\Office.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\Scheduler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
